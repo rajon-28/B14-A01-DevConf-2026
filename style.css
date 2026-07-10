@@ -21,9 +21,9 @@
 /* Nav section start */
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 15px;
+  margin: 15px 60px;
 }
 
 nav section ul {
@@ -237,4 +237,37 @@ nav section ul li a:hover {
   border-style: solid;
   border-radius: 8px;
   border-width: 2px;
+}
+/* Pricing section end */
+
+/* Footer section start */
+footer{
+  background-color: #0d1b2a;
+  padding: 56px 60px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left{
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.footer-right ul{
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  list-style: none;
+}
+
+.footer-right ul li a {
+  text-decoration: none;
+  color: #888888;
+  font-weight: 400;
+}
+
+.footer-right a:hover {
+  color: #1d4ed8;
 }
