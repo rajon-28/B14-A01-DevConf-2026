@@ -240,8 +240,178 @@ nav section ul li a:hover {
 }
 /* Pricing section end */
 
+/* Why Attend / Bento section start */
+.why-attend {
+  padding: 0 80px 120px;
+}
+
+.why-attend h2 {
+  text-align: center;
+  font-size: 56px;
+  font-weight: bold;
+  padding-top: 64px;
+  padding-bottom: 16px;
+  color: #0d1b2a;
+}
+
+.why-attend-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #575757;
+  max-width: 560px;
+  margin: 0 auto 48px;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  gap: 20px;
+}
+
+.bento-tile {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bento-tile--dark {
+  background-color: #0d1b2a;
+  border: none;
+}
+
+.bento-number {
+  font-size: 44px;
+  font-weight: bold;
+  color: #0d1b2a;
+  line-height: 1;
+}
+
+.bento-number--accent {
+  color: #2563eb;
+}
+
+.bento-label {
+  font-size: 14px;
+  color: #575757;
+  margin-top: 8px;
+}
+
+.bento-big {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.bento-big .bento-number {
+  font-size: 72px;
+  color: #93c5fd;
+}
+
+.bento-big .bento-label {
+  font-size: 18px;
+  color: #ffffff;
+  max-width: 320px;
+  margin-top: 0;
+}
+
+.bento-talks {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.bento-days {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.bento-quote {
+  grid-column: 4;
+  grid-row: 1 / 3;
+  justify-content: space-between;
+  border-left: 4px solid #2563eb;
+}
+
+.bento-quote-mark {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2563eb;
+  line-height: 1;
+}
+
+.bento-quote-text {
+  font-size: 15px;
+  font-style: italic;
+  color: #0d1b2a;
+  line-height: 1.5;
+}
+
+.bento-quote-author {
+  font-size: 13px;
+  color: #575757;
+  margin-top: 12px;
+}
+
+.bento-workshops {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.bento-workshops-icon {
+  flex-shrink: 0;
+}
+
+.bento-workshops-text h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.bento-workshops-text p {
+  font-size: 14px;
+  color: #93c5fd;
+  max-width: 420px;
+}
+
+.bento-countries {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .bento-big,
+  .bento-talks,
+  .bento-days,
+  .bento-quote,
+  .bento-workshops,
+  .bento-countries {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .bento-workshops {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Why Attend / Bento section end */
+
 /* Footer section start */
-footer{
+footer {
   background-color: #0d1b2a;
   padding: 56px 60px;
 
@@ -249,13 +419,13 @@ footer{
   justify-content: space-between;
 }
 
-.footer-left{
+.footer-left {
   font-size: 16px;
   font-weight: 400;
   color: #888888;
 }
 
-.footer-right ul{
+.footer-right ul {
   display: flex;
   justify-content: right;
   gap: 30px;
