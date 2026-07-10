@@ -201,18 +201,18 @@ nav section ul li a:hover {
   font-size: 44px;
   font-weight: bold;
   color: #0d1b2a;
-  padding-top: 8;
+  padding-top: 8px;
 }
 
 .card-user-type {
   font-size: 13px;
   font-weight: 400;
   color: #888888;
-  padding-top: 4;
+  padding-top: 4px;
 }
 
 .price-features ul {
-  align-items: left;
+  text-align: left;
   padding-left: 16px;
   line-height: 2;
 }
@@ -271,3 +271,5 @@ footer{
 .footer-right a:hover {
   color: #1d4ed8;
 }
+
+/* Footer section end */
