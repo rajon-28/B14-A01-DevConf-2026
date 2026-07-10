@@ -1,185 +1,99 @@
-## 🌟 WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-001 😎
+# DEVCONF2026 — Landing Page
+
+**Assignment 1 · Full Stack Web Development Course · Programming Hero**
+
+A landing page for a fictional developer conference, DEVCONF2026, built to practice core HTML5 and CSS3 fundamentals — semantic structure, Flexbox, Grid, and typography systems — with no JavaScript and no CSS frameworks.
 
 ---
 
-📅 Deadline For 60 marks: **Jul 11 2026 (11:59 pm ⏱️)**
+## 📌 About the Project
 
-📅 Deadline For 50 marks: **Jul 12 2026 (11:59 pm ⏱️)**
+DEVCONF2026 is a single-page conference site themed around the tagline **"Code. Connect. Create."** It includes a hero banner, a speaker showcase, tiered pricing cards, a "Why Attend" highlights section, and a footer — all styled from a single custom stylesheet.
 
-📅 Deadline For 30 marks: **Any time after the 50 marks deadline**
-
----
-
-## 📌 Assignment Requirements
-
-### ✅ Main Requirements (50 Marks)
-
-### 🔹 Navbar Section
-
-- Logo aligned to the left ("DEVCONF 2026")
-- Menu items centered (Speakers, Schedule, Tracks, Venue, Blog)
-- A "Register Now" button aligned to the right
-
----
-
-### 🔹 Banner (Hero) Section
-
-- A full-width dark background image with overlay
-- Centered bold multi-line heading ("Code. *Connect*. Create") — style one word (e.g. "Connect") in italics for emphasis
-- Centered supporting paragraph text below the heading
-- One "Register Now" button, centered, below the text
-
----
-
-### 🔹 Meet the Speakers Section
-
-- Centered section heading ("Meet the Speakers")
-- A 2x2 grid of speaker cards (minimum 4 speakers)
-- Each card must include:
-
-  - A speaker photo
-  - A small category/track label (e.g. AI/ML, Cloud & DevOps, Frontend, Security)
-  - Speaker name
-  - Speaker title/company
-
----
-
-### 🔹 Secure Your Spot (Pricing) Section
-
-- Centered section heading ("Secure Your Spot") with a subtitle
-- Three pricing cards in a row (Standard, Pro, Team)
-- The middle/featured plan (Pro) should be visually highlighted (different background color)
-- Each card must include:
-
-  - Plan name/label
-  - Price
-  - A bullet list of included features
-  - A button at the bottom
-
----
-
-### 🔹 Footer Section
-
-- Logo on the left
-- Social media links with icons on the right
-- A horizontal divider
-- Copyright message below the divider
-
----
-
-## 🎨 PLACEHOLDER SECTION — AI CHALLENGE (10 Marks)
-
-This is the **only** section where AI usage is expected and encouraged.
-
-- Replace the "Something Missing? Generate a relevant section with AI" placeholder with a brand-new section of your own idea.
-
-- The section **must stay relevant to the DevConf 2026 theme** (e.g. Sponsors,  Venue, FAQ, Newsletter Signup, Hackathon Details, Past Highlights, Job Board, etc.).
-- Use AI (Claude, ChatGPT, or any tool) to help you **ideate, design, and/or code** this section.
-
-- Marks will be given based on:
-
-  - How **unique** and creative the section idea is
-  - How well it **fits** visually and thematically with the rest of the page
-  - How effectively you used AI (clarity and quality of your prompting)
-
-- You must **submit the prompt(s)** you used to generate this section along with your submission (see Submission Format below).
-
----
-
-## 🔸 Other Requirements (Must Follow)
-- Minimum **5 GitHub commits**
-- **No Lorem Ipsum** text anywhere on the website
-- No duplicated/copy-pasted text across repeating sections (e.g. each speaker bio/description must be unique)
-
----
-
-## 🎥 ADDITIONAL REQUIREMENT — Concept Explanation Video (Optional, 0 Marks)
-
-> ⚠️ **This is fully optional and carries no marks in this assignment. However, it is highly recommended.** Starting from the next assignment, submitting a short explanation video like this will become **mandatory**, so use this one to get comfortable with the format early.
-
-- Record a **max 5-minute video** explaining the following basic HTML & CSS questions in your own words:
-
-  1. What is the difference between a `<div>` and a `<span>`? When would you use each?
-  2. What is the CSS Box Model? Explain `content`, `padding`, `border`, and `margin`.
-  3. What is the difference between a CSS `class` and an `id`? When should you use one over the other?
-  4. What is Flexbox, and what's the difference between `justify-content` and `align-items`?
-  5. What is the difference between `position: relative`, `absolute`, and `fixed` in CSS?
-
-- Speak naturally, in your own words — no need to read from a script.
-- Screen recording with your face on camera (or voice-over on slides/code) is fine, whichever you're comfortable with.
-- Upload the video link (YouTube/Google Drive) along with your submission.
+This was built as the first assignment for Programming Hero's Full Stack Web Development course, focused on demonstrating clean semantic markup and CSS layout techniques without relying on any external UI libraries.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- HTML5
-- CSS3
-- No JavaScript
-- No CSS frameworks or libraries
+- **HTML5** — semantic elements, no frameworks
+- **CSS3** — Flexbox, Grid, custom properties-free styling, media queries
+- **Google Fonts** — Inter, Nunito, Arima
+- ❌ No JavaScript
+- ❌ No CSS frameworks or libraries (Bootstrap, Tailwind, etc.)
 
 ---
 
-## 📂 Submission Format
+## 📂 File Structure
 
-- **GitHub Repository Link**
-- **Live Website Link (GitHub Pages)**
-- **AI Prompt(s)** used for the Placeholder Section (paste as text, or include in a `PROMPTS.md` file in your repo)
-- **(Optional) Concept Explanation Video Link**
+```
+devconf2026/
+├── index.html
+├── style.css
+├── assets/
+│   ├── logo.png
+│   ├── banner.jpg
+│   ├── andrej.png
+│   ├── demis.png
+│   ├── gary.png
+│   └── mustafa.png
+├── prompts.md
+└── README.md
+```
+
+---
+
+## ✨ Sections
+
+| Section | Description |
+|---|---|
+| **Header / Nav** | Logo, nav links, and a "Register Now" CTA |
+| **Hero** | Full-bleed banner image with headline and CTA button |
+| **Speakers** | Grid of speaker cards with field, name, and role |
+| **Pricing** | Three-tier pricing cards (Standard / Pro / Team) |
+| **Why Attend** | CSS Grid bento-style mosaic combining stats, a testimonial, and a workshop highlight |
+| **Footer** | Copyright and legal links |
 
 ---
 
-## ❓ Common Questions & Answers
+## 🎨 Design System
 
-**Can I use different images?**
-
-- Yes, you may use any relevant images (speaker photos, hero background, etc.).
-
-**Can I change the alignment and design freely?**
-
-- No. You must follow the alignment and layout shown in the Figma design.
-
-**Can I change colors?**
-
-- Yes, as long as the colors are relevant and visually consistent with a tech-conference theme.
-
-**Do I need to make the page pixel-perfect?**
-
-- No. You can use your own margin and padding while following the overall structure from Figma.
-
-**Can I use AI to build my sections?**
-
-- Only for the **Placeholder Section** (see below). For every other section, you are expected to write the HTML & CSS yourself. Using AI to generate the Navbar, Banner, Speakers, Pricing, or Footer sections is **not recommended** and may cost marks during evaluation.
-
-**Is the explanation video mandatory?**
-- No, not for this assignment. It's optional and won't be graded, but it's a good habit to build early since it will be mandatory starting next assignment.
+| Token | Value |
+|---|---|
+| Primary navy | `#0D1B2A` |
+| Primary blue | `#2563EB` |
+| Accent light blue | `#93C5FD` |
+| Body text gray | `#575757` |
+| Muted gray | `#888888` |
+| Border gray | `#E5E7EB` |
+| Border radius | `12px` (cards), `10px` (buttons) |
+| Fonts | Inter (body), Nunito (nav) |
 
 ---
+
+## 🚀 Running Locally
+
+No build step or dependencies required.
+
+1. Clone or download this repository
+2. Open `index.html` directly in a browser, **or**
+3. Serve it locally for a cleaner dev experience:
+   ```bash
+   npx serve .
+   ```
+   or use VS Code's Live Server extension
+
 ---
 
-## ❓ Common Issues You May Face and Quick Solutions
+## ⚠️ Known Limitations
 
-**GitHub Pages showing 404 / site not loading?**
-- Your main HTML file **must be named `index.html`** (lowercase). GitHub Pages looks for this file by default. Rename it if it's called anything else (e.g. `home.html`, `Index.html`).
+- Nav links and CTA buttons point to placeholder `#` anchors
+- No JavaScript means some interactions (e.g. real-time countdowns, tabbed panels) were intentionally left out to stay within the assignment's constraints
+- Layout is only responsive at one breakpoint (`768px`, added for the bento section) — the rest of the page assumes a desktop viewport
 
-**Images or CSS not loading on GitHub Pages?**
-- Add `./` before your file paths: `./style.css`, `./images/photo.jpg` instead of `style.css` or `/images/photo.jpg`.
-- File names are **case-sensitive** on GitHub Pages (Linux). `Photo.jpg` ≠ `photo.jpg` — make sure casing matches exactly.
+---
 
-**CSS background image not showing?**
-- Paths in CSS `background-image: url(...)` are relative to the **CSS file location**, not the HTML file. Use `./images/bg.jpg` or `../images/bg.jpg` depending on your folder structure.
+## 👤 Author
 
-**Site not updating after pushing to GitHub?**
-- Wait 1–2 minutes, then hard refresh: `Ctrl + Shift + R` (Windows) / `Cmd + Shift + R` (Mac) to bypass browser cache.
-
-**CSS changes not reflecting locally?**
-- Hard refresh: `Ctrl + Shift + R`. Your browser is likely showing a cached version.
-
-**Commit count is less than 5?**
-- Commit after completing each section (Navbar → Banner → Speakers → Pricing → Footer). Don't push everything in one final commit.
-
-**Fonts or icons not loading?**
-- If using Google Fonts or icon libraries via `<link>`, they require an internet connection. They will work fine on GitHub Pages.
-
-**Page looks fine locally but broken on GitHub Pages?**
-- Check all file/folder names for typos and casing mismatches. Windows ignores case, but GitHub Pages (Linux) does not.
+**Rajon**
+Full Stack Web Development — Programming Hero
